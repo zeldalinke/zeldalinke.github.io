@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Familien Manager</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div classs="secondField" id="secondField">
+        <div class="loginField" id="loginField">
+            <h1>Login</h1>
+            <input type="text" placeholder="Name" id="nameInput">
+            <input type="password" placeholder="password" id="passwordInput">
+            <button class="button" id="loginButton">Login</button>
+        </div>
+    </div>
+
+    <div class="header">
+        <div class="settingsField" id="settingsField">
+            <img src="menu.png" class="menuPicture" id="menuPicture">
+        </div>
+
+        <div class="menuBar" id="menuBar">
+            <div class="menuInfo" id="menuInfo">
+                <h1>Info-Karten</h1>
+                <input type="text" placeholder="Name" id="infoNameInput">
+                <input type="text" placeholder="Telefon Nummer" id="infoTelInput">
+                <button class="button" id="addInfoButton">Hinzufügen</button>
+            </div>
+
+            <div class="colorSettings" id="colorSettings">
+                <h1>Design (Hell - Dunkel)</h1>
+                <button class="button" id="desingButton">Ändern</button>
+                <div class="designList" id="designList"></div>
+            </div>
+
+            <div class="memberAdd" id="memberAdd">
+                <h1>Mitglied hinzufügen / entfernen</h1>
+                <p>
+                    <input type="text" placeholder="Name" id="addMemberInput">
+                    <button id="addMemberButton">Hinzufügen</button>
+                </p>
+                <p>
+                    <label for="memberList">Mitglied auswählen: </label>
+                    <select id="memberList"></select>
+                    <button class="button" id="removeMemberButton">Entfernen</button>
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <div class="mainField" id="mainField">
+        <div class="container">
+            <div class="taskField">
+                <h1>Aufgaben</h1>
+                <input type="text" placeholder="Neue Aufgabe hinzufügen" id="taskInput">
+                <input type="number" placeholder="Wichtigkeit (1-3)" id="taskImpInput">
+                <label for="taskSelect">Mitglied auswählen: </label>
+                <select id="taskSelect"></select>
+                <button class="button" id="addTaskButton">Hinzufügen</button>
+                <div id="taskList"></div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="appField">
+                <h1>Termine</h1>
+                <input type="text" placeholder="Neuen Termin hinzufügen" id="appInput">
+                <input type="date", id="appTerInput">
+                <button class="button" id="addAppButton">Hinzufügen</button>
+                <div id="appList"></div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="buyField">
+                <h1>Einkaufliste</h1>
+                <input type="text" placeholder="Neues Produkt hinzufügen" id="buyInput">
+                <button class="button" id="addBuyButton">Hinzufügen</button>
+                <button class="button" id="deleteAllBuyButton">Alles Löschen</button>
+                <div id="buyList"></div>
+            </div>
+        </div>
+        
+        <div class="infoField">
+            <h3>Kontakte</h6>
+            <div class="infoList" id="infoList"></div>
+        </div>
+    </div>
+    <script src="scripts.js"></script>
+</body>
+</html>
