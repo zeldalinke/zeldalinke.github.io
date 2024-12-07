@@ -1,0 +1,62 @@
+.mainField, .secondField { 
+    padding: 20px; 
+    margin: 10px; 
+    border-radius: 8px; 
+    gap: 20px;
+    display: none;
+    
+}
+
+body {
+    display: flex; 
+    justify-content: center; 
+    align-items: center; height: 
+    100vh; margin: 0; 
+    font-family: Arial, sans-serif;
+    background-color: rgb(214, 170, 159);
+}
+.loginField {
+    padding: 20px; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4); 
+    border-radius: 8px;
+}
+
+/*  */
+.header {
+    position: fixed;
+    top: 10px;
+    right: 10px;
+}
+.menuPicture {
+    width: 50px;
+    height: 50px;
+}
+.menuBar {
+    display: none;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4); 
+    padding: 10px;
+    border-radius: 15px;
+}
+
+/*  */
+.container {
+    border-radius: 15px;
+    text-align: center;
+    padding: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+}
+button{
+    border-radius: 25px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+    border: none;
+    
+    display: inline-block;
+}
+.infoField {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+}
+
+
+
